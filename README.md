@@ -4,7 +4,7 @@ images like these can cause fraudulent and inappropriate informations to float i
 
 Hence, we need AI based solutions that help us deal with the misuse of such technologies and come up with innovative approaches to detect and correctly classify images/videos as real or fake. In this project, we will propose an efficient CNN architecture to detect StyleGAN based DeepFake images, which performs at par with the current state-of-the-art methods.
 
-Link : !(https://deepfake-detection-using-cnns.streamlit.app/)
+Link : https://deepfake-detection-using-cnns.streamlit.app/
 
 ### Dataset
 The dataset which we used for this project is “140k Real and Fake Faces” from Kaggle [[Dataset Link](https://www.kaggle.com/xhlulu/140k-real-and-fake-faces)]
