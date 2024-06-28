@@ -1,6 +1,6 @@
-Link : https://deepfake-detection-using-cnns.streamlit.app/
-
 # Deepfake Image Detection using CNN
+
+Link: https://deepfake-detection-using-cnns.streamlit.app/
 
 ## Introduction
 
