@@ -42,7 +42,7 @@ Loss Function: Cross-entropy loss is used to quantify the difference between pre
 
 Optimizer: The Adam optimizer adjusts the network weights to minimize the loss function.
 
-##Results
+## Results
 
 The model achieved an accuracy of 94% on the test dataset, showcasing its capability in detecting deepfake images. Additional performance metrics such as precision, recall, and F1-score are also evaluated to ensure the model's robustness and reliability.
 
