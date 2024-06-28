@@ -1,10 +1,44 @@
-# Detecting-GAN-Generated-DeepFake-Images
-Recent advancements in the field of GANs (Generative adversarial networks) such as StyleGAN, have made it possible to generate realistic looking facial images. Artificially fabricated
-images like these can cause fraudulent and inappropriate informations to float in media, causing severe problems. 
-
-Hence, we need AI based solutions that help us deal with the misuse of such technologies and come up with innovative approaches to detect and correctly classify images/videos as real or fake. In this project, we will propose an efficient CNN architecture to detect StyleGAN based DeepFake images, which performs at par with the current state-of-the-art methods.
-
 Link : https://deepfake-detection-using-cnns.streamlit.app/
+
+## Deepfake Image Detection using CNN
+
+# Introduction
+
+The advent of deepfake technology has introduced a new dimension to digital media manipulation. While deepfakes can be used for entertainment and artistic purposes, they also pose significant threats, such as spreading misinformation, identity theft, and defamation. Detecting deepfake images is crucial in mitigating these risks and ensuring the authenticity of visual information.
+
+# Project Overview
+
+This project focuses on detecting deepfake images through advanced preprocessing techniques and a custom-built Convolutional Neural Network (CNN). By applying Gaussian blur and noise to the images, we enhance the model's ability to capture intricate details, leading to improved accuracy in detecting deepfakes.
+
+# Data Preprocessing
+
+Image Augmentation: To improve the robustness of the model, we apply Gaussian blur and noise to the images. These techniques help in emphasizing subtle anomalies and artifacts that are indicative of deepfake manipulations.
+      
+Gaussian Blur: Helps in smoothing the image and highlighting important features.
+
+Noise Addition: Introduces randomness, making the model more resilient to variations in the input data.
+
+# Model Architecture
+
+The custom-built CNN architecture is designed to efficiently classify images into real or deepfake categories. The general structure of the CNN includes:
+
+  Convolutional Layers: These layers extract essential features from the input images by applying convolutional filters.
+  Activation Functions: ReLU (Rectified Linear Unit) is commonly used to introduce non-linearity.
+  Pooling Layers: These layers reduce the dimensionality of the feature maps, retaining the most significant information.
+  Dropout Layers: Applied to prevent overfitting by randomly setting a fraction of input units to zero during training.
+  Fully Connected Layers: Serve as classifiers, consolidating the features extracted by the convolutional layers.
+  Output Layer: Utilizes a softmax activation function to provide probability scores for classification.
+
+# Training and Evaluation
+
+The model is trained on a labeled dataset of real and deepfake images. The training process includes:
+
+Loss Function: Cross-entropy loss is used to quantify the difference between predicted and actual labels.
+Optimizer: The Adam optimizer adjusts the network weights to minimize the loss function.
+
+Results
+
+The model achieved an accuracy of 94% on the test dataset, showcasing its capability in detecting deepfake images. Additional performance metrics such as precision, recall, and F1-score are also evaluated to ensure the model's robustness and reliability.
 
 ### Dataset
 The dataset which we used for this project is “140k Real and Fake Faces” from Kaggle [[Dataset Link](https://www.kaggle.com/xhlulu/140k-real-and-fake-faces)]
